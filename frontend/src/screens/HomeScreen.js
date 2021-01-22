@@ -18,6 +18,7 @@ function HomeScreen() {
                         numReviews={product.numReviews}
                         rating={product.rating}
                         brand={product.brand}
+                        price={product.price}
 
                         />
                     </Col>
