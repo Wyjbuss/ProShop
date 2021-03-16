@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {Card,Button} from 'react-bootstrap'
 import Rating from './Rating'
 
@@ -15,7 +16,9 @@ function Product(props) {
     <Rating value={props.rating} text={props.numReviews} />
     
     </Card.Text>
+    <Link to={`/product/${props._id}`}>
     <Button variant="primary">Go somewhere</Button>
+    </Link>
   </Card.Body>
 </Card> 
         </>
